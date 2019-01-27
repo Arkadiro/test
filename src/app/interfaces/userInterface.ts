@@ -5,6 +5,6 @@ export interface UsersInterface {
   phone: string;
   username: string;
   website: string;
-  company?: object;
-  address?: object;
+  company?: any;
+  address?: any;
 }

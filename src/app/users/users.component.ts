@@ -18,12 +18,5 @@ export class UsersComponent implements OnInit {
 
   async ngOnInit() {
     this.users = await this.usersService.getUsers();
-    this.identity(3);
   }
-
-  identity<T>(arg: T): T {
-    console.log(typeof arg);
-    return arg;
-  }
-
 }

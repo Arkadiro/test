@@ -9,13 +9,15 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
+import { TestsComponent } from './tests/tests.component';
 
 // import { Data } from './data'
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'users', component: UsersComponent },
-  { path: ':id', component: ServerComponent },
+  { path: 'tests', component: TestsComponent },
+  { path: ':id', component: ServerComponent }
 ];
 
 @NgModule({
@@ -24,7 +26,8 @@ const appRoutes: Routes = [
     ServerComponent,
     ServersComponent,
     HomeComponent,
-    UsersComponent
+    UsersComponent,
+    TestsComponent
   ],
   imports: [
     BrowserModule,

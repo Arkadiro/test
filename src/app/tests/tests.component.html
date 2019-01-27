@@ -1,0 +1,11 @@
+<div class="usersCols">
+  <div class="col-1" *ngIf="loaded">
+    <p *ngFor="let user of users">{{ user.name }} - {{ user.age }}</p>
+  </div>
+  <div class="col-1" *ngIf="loaded">
+    <p *ngFor="let dat of data">{{ dat.name }} - {{ dat.age }}</p>
+  </div>
+  <div class="col-1" *ngIf="loaded">
+    <p *ngFor="let mix of mixed">{{ mix.name }} - {{ mix.age }}</p>
+  </div>
+</div>

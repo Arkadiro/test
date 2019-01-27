@@ -1,0 +1,9 @@
+.usersCols {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.col-1 {
+  display: inline-block;
+  margin-right: 40px;
+}

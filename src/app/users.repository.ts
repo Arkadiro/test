@@ -1,3 +1,4 @@
+import { UsersInterface } from './interfaces/userInterface';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -12,7 +13,7 @@ export class UsersRepository {
   }
 
 
-  getUsers(): Promise<object> {
+  getUsers(): Promise<Object> {
       return this.http.get('https://jsonplaceholder.typicode.com/users')
         .toPromise();
   }
